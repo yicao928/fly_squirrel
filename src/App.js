@@ -15,6 +15,11 @@ function App() {
          >
           Fly Squirral
         </a>
+        <textarea className="Textarea">
+        </textarea>
+        <button className="User-button">
+          <p>sign in</p>
+        </button>
       </header>
       <body className="App-body">
         <p>BODY PART</p>
