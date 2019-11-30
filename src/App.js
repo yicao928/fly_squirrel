@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react'; 
 import './App.css';
 import Home from './components/Home'
+import Login from'./components/Login'
 
 class App extends Component{
   render(){
@@ -24,7 +25,7 @@ class App extends Component{
           </button>
         </header>
         <body className="App-body">
-          <Home></Home>
+          <Login></Login>
         </body>
       </div>
     );
