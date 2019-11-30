@@ -18,15 +18,9 @@ class App extends Component{
            >
             Fly Squirral
           </a>
-          <textarea className="Textarea">
-          </textarea>
-          <button className="User-button">
-            <p>sign in</p>
-          </button>
         </header>
-        <body className="App-body">
           <Login></Login>
-        </body>
+        
       </div>
     );
   }
