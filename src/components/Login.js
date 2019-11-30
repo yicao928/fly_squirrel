@@ -1,13 +1,15 @@
 import React from 'react';
 import './Login.css';
 
+
 class Login extends React.Component{
     constructor(props){
         super(props);
         this.state={
             msg:'11111',
             username:'',
-            password:''
+            password:'',
+            login:false
         };
     }
     userchange=(e)=>{
@@ -26,9 +28,10 @@ class Login extends React.Component{
             }
         )
     }
-    checkuser=()=>{
+    checkuser=(e)=>{
         if(this.state.username==='admin' && this.state.password===111){
-            alert("success!");
+            alert("login success");
+            this.props.history.push({pathname:'/home'});
         }else{
             alert("username or password wrong!");
         }
@@ -37,7 +40,18 @@ class Login extends React.Component{
     render(){
         return(
             <div>
-                <a className='Login'>
+        <header className="App-header">
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <a
+           className="App-link"
+           href="https://reactjs.org"
+           target="_blank"
+           rel="noopener noreferrer"
+           >
+            Fly Squirral
+          </a>
+        </header>
+                <b className='Login'/>
                 username
                 <input ref="username" onChange={this.userchange}/> 
                 <br/><br/>
@@ -46,10 +60,11 @@ class Login extends React.Component{
                 <input ref="password" onChange={this.passwordcange}/>
                 <br/><br/>  
                 <button onClick={this.checkuser}>login</button>
-                </a>
+                
             </div>
         );
     }
 }
+
 
 export default Login;
