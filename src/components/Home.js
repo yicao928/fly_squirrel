@@ -11,9 +11,22 @@ class Home extends React.Component{
 
     render(){
         return(
-            <div>
-                <h2>{this.state.msg}</h2>
-                <p>asdasdasd</p>
+        <div>
+          <header className="App-header">
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <a
+           className="App-link"
+           href="https://reactjs.org"
+           target="_blank"
+           rel="noopener noreferrer"
+           >
+            Fly Squirral
+          </a>
+        </header>
+            <div className="search">
+            <input type="search bar" placeholder="seacrhing"/> 
+            </div>
+            
             </div>
         );
     }
